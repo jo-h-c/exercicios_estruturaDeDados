@@ -43,7 +43,7 @@ public class ListaLigada {
             this.cabeca = novaCelula;
             this.cauda = novaCelula;
         } else {
-            
+            //add o resto do codigo
         }
         this.tamanho = tamanho + 1;
     }
@@ -54,8 +54,8 @@ public class ListaLigada {
     }
 
     public void removerPorPosição(int posicao){
-        if(int i = 0){}
-        
+        //add teste para ver se a posicao existe
+
         if(posicao == 0){
             removerInicio();
         } else if(posicao == tamanho-1){
@@ -101,7 +101,7 @@ public class ListaLigada {
             sb.append(auxiliar.getElemento());
             sb.append(", ");
 
-            auxiliar.getProxima();
+            auxiliar = auxiliar.getProxima();
         } 
 
         sb.append(auxiliar.getElemento());
