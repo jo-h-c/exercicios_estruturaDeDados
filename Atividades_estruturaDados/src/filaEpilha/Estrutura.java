@@ -1,25 +1,25 @@
-package fila;
+package filaEpilha;
 
 import java.util.LinkedList;
 
-public class Pilha {
-    LinkedList<String> pilha = new LinkedList<>();
+public class Estrutura {
+    LinkedList<String> fila = new LinkedList<>();
 
     public void inserir(String e){
-        pilha.push(e);
+        fila.addLast(e);
     }
 
     public String remover(){
         if(verificar()){
-            System.out.println("A pilha está vazia");
+            System.out.println("A lista está vazia");
         } else {
-            return pilha.pop();
+            return fila.removeFirst();
         }
         return null;
     }
 
     public boolean verificar(){
-        if(this.pilha.isEmpty()){
+        if(this.fila.isEmpty()){
             return true;
         }
         return false;
@@ -27,9 +27,9 @@ public class Pilha {
 
     public void mostrar(){
         if(verificar()){
-            System.out.println("a pilha esta vazia");
+            System.out.println("a lista esta vazia");
         } else {
-            System.out.println("pilha: " + pilha);
+            System.out.println("fila: " + fila);
         }
     }
 }
