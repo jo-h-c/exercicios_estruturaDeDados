@@ -13,6 +13,6 @@ public class Principal {
         arv.inserir(76);
         arv.inserir(94);
 
-        System.out.println("Menor valor da árvore: " + arv.buscarMenor());
+        System.out.println("o menor valor da árvore é " + arv.buscarMenor());
     }
 }
